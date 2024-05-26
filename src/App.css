@@ -1,38 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght300;400;500;600&display=swap');
+
+*{
+
+   font-family: Arial, sans-serif; /* Fonte da família */
+
+
+/* Reset padrão */
+   font-family: 'Poppins',sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ body {
+   background-color: white;
+}
+
+/* Trabalhando no Menu */
+
+
 .App {
-  text-align: center;
+   text-align: center;
+ }
+ 
+ .App-logo {
+   height: 40vmin;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ 
+ 
+ 
+ .projectos h2{
+    text-align: center;
+    margin-bottom: 24px;
+    color: #415aca;
+ }
+ .lista{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 1.5rem;
+   margin-bottom: 1rem;
+   margin-bottom: 24px;
+ }
+ .testel img{
+   margin-top: 10px;
+   width: 1280px;
+   height: 496px;
+ 
+ }
+ .testel .carousel-image {
+    width: 100%; /* Defina a largura como 100% para ocupar todo o espaço disponível */
+    height: auto; /* Defina a altura como automática para manter a proporção da imagem */
+    /* Adicione outros estilos conforme necessário */
+    margin-top: 10px;
+    width: 1280px;
+    height: 596px;
+ }
+ .custom-menu {
+    height: 20px; /* Reduzindo ainda mais a altura */
+    z-index: 9999999;
+    position: fixed;
+    width: 100%; /* Para garantir que o menu ocupe toda a largura */
+    display: flex; /* Para centralizar as opções */
+    justify-content: center; /* Para centralizar as opções */
+    align-items: center; /* Para centralizar as opções verticalmente */
+ }
+ 
+ .custom-menu .p-menuitem-text {
+    margin: 0 0px; /* Adiciona espaço entre as opções */
+ }
+ .custom-menu .p-menubar {
+    margin-top: 8px;
+    height: 100px; /* Defina a altura desejada */
+    width: 100%; /* Defina a largura desejada, por exemplo, 100% para preencher a largura do contêiner pai */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Adicione 'Poppins' como a primeira opção de fonte */
+   font-size: 16px; /* Tamanho da fonte */
+   text-align: center; /* Centraliza o texto */
+ 
+ }
+  .custom-menu .p-menubar .p-menuitem-text{
+    margin-top: 18px;
+    margin-left: 18px;
+
   }
+  .avatar-wrapper {
+   display: flex;
+   align-items: center;
+   position: relative; /* Para posicionar o submenuAvatar em relação a este wrapper */
+ }
+ 
+ .submenuAvatar {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 1000; /* Garante que o submenuAvatar esteja acima de outros elementos */
+ }
+ 
+ @media (max-width: 768px) {
+   .avatar-wrapper {
+     flex-direction: column; /* Altera o layout para empilhar em telas menores */
+     align-items: flex-start; /* Alinha o avatar à esquerda em telas menores */
+   }
+ }
+ 
+ /*aaaaaaaaaa*/
+ 
+  .avatar{
+     display: flex;
+      align-items: center;
+      margin-top:35px;
+      margin-left: 270px;
+  }
+  .avatar .submenuAvatar{
+       position: absolute; 
+       top: 60px;
+        z-index: 1000;
+        left: 1050px;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+  }
+ 
+ 
+
+
+
+
+
+
+
+/* Estilos para a classe mostre */
+.mostre {
+   display: block;
+   flex-wrap: wrap; /* Permite que os elementos quebrem de linha conforme necessário */
+   width: 100%; /* Ocupa toda a largura do contêiner */
+   margin-top: 20px; /* Espaçamento superior */
+   text-align: center; /* Centraliza o texto dentro da div */
+   padding-top: 60px;
+   font-family: Arial, Helvetica, sans-serif; /* Tipo de fonte */
+}
+.mostre h1{
+   padding-bottom: 20px;
+   color:  #415aca;
+   font-size: 30px;
+}
+.mostre p{
+   font-size: 20px;
+   padding-bottom: 150px;
+
+
+}
+/*
+.mostre{
+  background-color: #000f54;
+  height: 200px;
+}*/
+/*---------------------------Rodapé-------------------*/
+footer{
+   background-color: #415aca;
+   padding: 50px 0;
+   width: 100%; /* Define a largura total */
+  
+    
+}
+/* Estilos para remover a borda do input */
+form .inserir {
+   border: none !important; /* Remove a borda */
+   border-radius: 2px; /* Remove o arredondamento das bordas */
+   box-shadow: none; /* Remove qualquer sombra */
+   color: black;
+ }
+ form{
+   border: none !important; /* Remove a borda */
+ }
+ /* Estilos para a cor do placeholder */
+.inserir::placeholder {
+   color: #415aca; /* Cor desejada para o placeholder */
+ }
+ 
+.conteiner-footer{
+  max-width: 1400px;
+  padding: 0 4%;
+   margin: auto;
+   height: 200px;
+}
+.row-footer{
+   display: flex;
+   flex-wrap: wrap;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer-col h4{
+   font-size: 22px;
+   color: white;
+   margin-bottom: 20px;
+   font-weight: 500;
+   position: relative;
+   text-transform:uppercase;
+
+}
+.footer-col ul{
+   list-style: none;
+}
+.footer-col ul li{
+   margin: 10px 0;
+}
+.footer-col ul li a{
+   font-size: 16px;
+   text-transform: capitalize;
+   color: white;
+   text-decoration: none;
+   font-weight: 300 ;
+   display: block;
+   transition: all 0.3s ease;
+} 
+.footer-col ul li a:hover{
+   color: #cecdcd;
+   padding-left: 10px ;
+}
+
+
+
+.medias-sociais .botton {
+   display: inline-block;
+   height: 60px;
+   width: 60px;
+   float: left;
+   background-color: #fff;
+   overflow: hidden;
+   margin: -30px 5px 0; /* Adiciona uma margem negativa no topo */
+   border-radius: 50px;
+   cursor: pointer;
+   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease-out;
+}
+
+
+.medias-sociais .botton .icon {
+   display: inline-block;
+   text-align: center;
+   height: 60px;
+   width: 60px;
+   border-radius: 50px;
+   box-sizing: border-box;
+   line-height: 60px;
+   background: white;
+   transition: all 0.3s ease-out;
+
+}
+.medias-sociais .botton .icon i {
+   font-size: 25px;
+   line-height: 60px;
+   color: rgb(86, 0, 108);
+   transition: all 0.3s ease-out;
+}
+.medias-sociais .botton:hover {
+   width: 200px;
+}
+
+.medias-sociais .botton span {
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 60px;
+   margin-left: 10px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   
+}
+
+
+.footer-col .medias-sociais {
+  
+   display: inline-flex;
+   
+}
+
+ .medias-sociais {
+  position: absolute;
+  left: 460px;
+  margin-top: -10px ;
+
+}
+
+
+.medias-sociais .botton:nth-child(1):hover .icon {
+   background: rgb(0, 128, 255);
+}
+.medias-sociais .botton:nth-child(2):hover .icon {
+   background: #ab2cdd;
+}
+.medias-sociais .botton:nth-child(3):hover .icon {
+   background: #006a32;
+}
+
+.medias-sociais .botton:nth-child(4):hover .icon {
+   background: rgb(0, 128, 255);
+}
+.medias-sociais .botton:hover .icon i{
+   color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-col .form-sub form input {
+   width: 100%;
+   padding: 10px;
+   font-size: 15px; 
+   outline: none;
+   border: none !important; /* Removendo a borda */
+   color: black;
+   background-color: white;
+   /* Adicione outras propriedades de estilo conforme necessário */
+}
+
+
+.footer-col .form-sub button{
+   width: 100%;
+   margin-top: 10px ;
+   padding: 10px;
+   font-size: 17px;
+   border: none;
+   border-radius: 3px;
+   font-weight: bold;
+   background-color: #007bff;
+   cursor: pointer;
+}   
+.footer-col .form-sub button:hover{
+  background-color: red;
+}
+::-webkit-input-placeholder {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/*Responsividade*/
+@media (max-width: 800px)
+{
+   .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+   }
+}
+@media (max-width:600px){
+   .footer-col{
+      width: 100  
+   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+
+ /*------------Sobre Nos-------------*/
+ .info
+ {
+   margin-top: 120px;
+   color: #415aca;
+
+ }
+ .info h1{
+   text-align: center;
+ }
+.info .forma{
+   background-color: #415aca;
+   width: 350px;
+   height: 5px;
+   margin-right: 40px;
+   position:absolute;
+   right: 430px;
+   
 }
+
+
+.info p{
+   font-size: 20px; /* Tamanho da fonte */
+   text-align: center; /* Alinhamento do texto */
+   margin-top: 10px;
+   color: black;
+ 
+}
+.infoSobre{
+   width: 1200px;
+}
+.infoSobre p{
+   text-align: justify;
+   margin-top: 80px;
+   margin-left: 100px;
+   line-height: 35px;
+   margin-bottom: 80px;
+   
+   
+}
+.infoTeste .formaTeste{
+   margin-bottom: 12000px;
+   text-align: center;
+
+}
+
+.cart-icon{
+   margin-top: 36px;
+   margin-left: 16px;
+   width: 35px;
+}
+/* Responsividade */
+
+ @media screen and (max-width:850px){
+   .footer-col{
+
+   }
+   .footer-col h4{
+      font-size: 22px;
+      color: white;
+      margin-bottom: 15px;
+      font-weight: 100;
+      margin-top: -16px;
+      margin-right: -50px;
+      position: relative;
+      text-transform:uppercase;
+   }
+   .medias-sociais {
+      margin: 70px -250px 0; /* Adiciona uma margem negativa no topo */
+   }
+   .form-sub  {
+      margin-top: -20px;
+      margin-left: -50px;
+    }
+    .conteiner-footer{
+       height: 400px;
+    }
+    .testel .carousel-image{
+         
+    }
+    .forma{
+      position: absolute;
+      left: 140px;
+    }
+    .infoSobre p{
+      width: 450px;
+   }
+
+}
+@media screen and(max-width:550px){
+   .footer-col h4{
+      color: #006a32;
+   }
+}
+@media screen and(max-width:480px){
+   .footer-col h4{
+      color: #006a32;
+   }
+}
+.listar-menu {
+   margin-top: 30px; /* Margem superior */
+   margin-bottom: 10px; /* Margem inferior */
+   margin-left: 0; /* Margem esquerda */
+   margin-right: 0; /* Margem direita */
+ }
+ 
+
+ @media only screen and (max-width: 600px) {
+   .footer-col{
+      width: 100 ; 
+
+   } 
+   footer{
+      width: 490px;
+   }
+   .medias-sociais{
+         margin: 100px -350px 0; /* Adiciona uma margem negativa no topo */
+   }   
+   .testel .carousel-image{
+       width: 1000px;  
+   }
+   .aumentar {
+      width: 490px;
+   }
+   .info {
+      text-align: center; /* Alinha o texto centralmente */
+    }
+   
+    .infoSobre p{
+      font-size: 10px; /* Ajusta o tamanho da fonte para telas menores */
+      margin: 0 -45px 0; /* Adiciona uma margem negativa no topo */
+    }
+    .forma{
+      margin: 0 -110px 0; /* Adiciona uma margem negativa no topo */
+   }
+  
+}
+
+.App-logo:hover{
+   background-color: none !important;
+   color: none !important;
+   
+}
+.p-menuitem-text:hover{
+   color: #415aca;
+}
+
+.Resp p {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.p-toast-message-content{
+   gap:10px !important; 
+   padding: 20px !important;
+}
+
+.p-toast-message-content button {
+   background-color: #007bff !important;
+}
+.toast-container {
+   z-index: 9999999999999999999 !important;
+   position: absolute;
+   top:50px!important;
+ }
+ .p-toast {
+   z-index: 9999999999999999999 !important;
+
+ }

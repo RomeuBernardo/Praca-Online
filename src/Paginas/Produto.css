@@ -1,0 +1,189 @@
+/* Produto.css */
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinhar os itens à esquerda */
+  margin-top: 60px;
+}
+
+.card {
+  display: inline-block; /* Exibir os cards em linha */
+  width: 250px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Adicionar uma transição de transformação */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efeito de levantamento sutil ao passar o mouse */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.descricao {
+  padding: 10px;
+}
+
+.descricao h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.descricao p {
+  margin: 0 0 5px;
+}
+
+.button-adicionar {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-adicionar:hover {
+  background-color: #0056b3;
+}
+
+/* Produto.css */
+.produtos-container {
+  padding-top: -40px; /* Adiciona um espaço entre o menu e os produtos */
+}
+.w-6 {
+  /* Define a largura da imagem */
+  width: 6rem;
+}
+
+.shadow-2 {
+  /* Adiciona uma sombra à imagem */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+.mov {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Certifique-se de que o cabeçalho esteja em uma camada superior */
+}
+
+
+
+
+
+
+/* Adicione estilos para o carrinho e botões */
+.carrinho-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carrinho-container h2 {
+  margin-bottom: 5px;
+}
+
+.carrinho-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrinho-container li {
+  margin-bottom: 5px;
+}
+
+.button-adicionar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-adicionar:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.descricao {
+  padding: 15px;
+}
+
+/* Adicione mais estilos conforme necessário */
+/* Efeito de carta */
+.card-carrinho {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+}
+
+.card-carrinho:hover {
+  transform: translateY(-10px);
+}
+
+.card-carrinho .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+}
+
+.card-carrinho:hover .content {
+  transform: rotateY(180deg);
+}
+
+.card-carrinho .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: rotateY(180deg);
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+}
+
+.card-carrinho:hover .back {
+  transform: rotateY(0deg);
+}
+.mensagem {
+  background-color: #e1ffc7;
+  color: #2c662d;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}

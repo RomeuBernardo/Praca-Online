@@ -1,0 +1,114 @@
+.p-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .p-table th,
+  .p-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  .p-table th {
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  /* Admin.css */
+
+.p-table td,
+.p-table th {
+  text-align: center; /* Centraliza o texto nas células */
+}
+
+.p-table tbody tr {
+    text-align: center;
+}
+
+.pi{
+    margin-right: 5px;
+}
+.p-grid{
+    margin-top: 100px;
+}
+
+.edit-dialog .edit-form {
+    max-height: 70vh; /* Define a altura máxima da caixa de diálogo */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+    padding-right: 20px; /* Adiciona um espaço para a barra de rolagem não sobrepor os campos */
+    width: 600px;
+}
+  
+  .p-field label {
+    width: 100px; /* Define uma largura fixa para as etiquetas */
+    display: inline-block; /* Permite o alinhamento à direita das etiquetas */
+    margin-bottom: 10px; /* Adiciona um espaço entre as etiquetas e os campos */
+  }
+  
+  .p-field input {
+    width: calc(100% - 120px); /* Define uma largura para os campos, levando em consideração a largura fixa das etiquetas */
+    margin-bottom: 10px; /* Adiciona um espaço entre os campos */
+  }
+  
+  .p-button {
+    margin-right: 10px; /* Adiciona um espaço entre os botões */
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem; /* Ajuste conforme necessário */
+  }
+  .button-group {
+    display: flex;
+  }
+  
+  .button-group > .p-button {
+    margin-right: 0.5rem;
+  }
+.container{
+  margin-top: 50px;
+}
+.container h1{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Adicione 'Poppins' como a primeira opção de fonte */
+
+  text-align: center;
+  color:#415aca;
+  margin-bottom: 15px;
+}
+.p-inputtext.single-line {
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  overflow: hidden; /* Esconde o texto que excede a largura do contêiner */
+  text-overflow: ellipsis; /* Exibe "..." no final do texto cortado */
+  width: 200px; /* Ajuste a largura conforme necessário */
+}
+.admin-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.active-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.content {
+  margin-top: 20px;
+}
+.mov {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Certifique-se de que o cabeçalho esteja em uma camada superior */
+}
+.admin-panel{
+  margin-top: 200px;
+}
+.button-group{
+   width: 320px !important;
+}
+

@@ -1,0 +1,13 @@
+/* Estilo para o botão de rolar para o topo */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 40px; /* Distância do botão ao fundo da página */
+  right: 10px; /* Distância do botão ao lado direito da página */
+  z-index: 1000; /* Certifica-se de que o botão esteja acima de outros conteúdos */
+  margin-bottom: 270px;
+}
+
+/* Estilo para a transição animada do botão */
+.scroll-to-top-button-animated {
+  transition: opacity 0.3s, transform 0.3s;
+}

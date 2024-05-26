@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mov {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Certifique-se de que o cabeçalho esteja em uma camada superior */
+  }
+  
+  .formulario-body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white; /* ou qualquer outra cor desejada */
+}
+.formulario1-body {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white; /* ou qualquer outra cor desejada */
+}
+
+  
+  .app-container {
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Para posicionar as mensagens de erro corretamente */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    margin-bottom: 0px;
+    width: 500px;
+    position: relative; /* Para posicionar as mensagens de erro corretamente */
+  }
+  .form-group .error-message {
+  color: rgb(255, 72, 72);
+  font-size: 0.75rem;
+  margin-top: 8px;
+  position: absolute;
+  bottom: -30px; /* Ajuste a posição vertical conforme necessário */
+  left: 0; /* Posiciona a mensagem de erro no início do elemento pai */
+}
+
+  .checkbox-group {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .checkbox-group label {
+    font-size: 0.825rem;
+    margin-left: 10px;
+  }
+  
+  .form-group label {
+    color: #eee;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #444;
+    color: #eee;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    outline: 1px solid 444;
+  }
+  
+  .form-group input::placeholder {
+    color: #999;
+  }
+  
+  .form-group .input-error {
+    outline: 1px solid rgb(255, 72, 72);
+  }
+  
+  .form-group .error-message {
+    color: rgb(255, 72, 72);
+    font-size: 0.75rem;
+    margin-top: 8px;
+    position: absolute; /* Para posicionar as mensagens de erro corretamente */
+    bottom: -15px; /* Para ajustar a posição vertical das mensagens de erro */
+  }
+  
+  .form-group button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #eee;
+    background-color:#007bff ;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 500ms ease;
+  }
+  
+  .form-group button:hover {
+    cursor: pointer;
+    background-color: #49a1b8;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+  }
+  
+  .forgot-password {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+  }
+  
+  .signup-link {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+  }
+  
+  .signup-link:hover{
+    color: orange;
+  }
+.forgot-password:hover{
+    color: orange;
+}
+.linCadastro:hover
+{
+    color: orange;   
+}
+.linCadastro{
+    margin-top: 6px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+/*Vedendor */
+form p-fluid{
+  margin-top: 100px;
+
+}
+.p-col-8 .card{
+  width: 500px;
+}
+@media screen and (max-width:850px){
+
+    form .p-fluid {
+    position: absolute;
+    right: 1100px ;
+  }
+  .p-col-8 .card{
+    margin-top: 100px;
+  }
+ 
+}
+.form-group label {
+  color: black;
+}
+/* Formulario.css */
+.errorMessage {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.p-col-8{
+  background-color: '#f2f2f2';
+  height: 400px; 
+  color: #415aca;
+  margin-bottom: 160px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+
+}
+
+.form-content {
+  display: flex; /* Aplicando flexbox ao conteúdo do formulário */
+  justify-content: center; /* Centralizando horizontalmente */
+  align-items: center; /* Centralizando verticalmente */
+}

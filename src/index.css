@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.p-menuitem-content {
+  display: flex; /* Usando display flex para centralizar o texto */
+  align-items: center; /* Centralizando verticalmente */
+  justify-content: center; /* Centralizando horizontalmente */
+  transition: background 0.3s ease; /* Adicionando uma transição suave para o background */
+}
+
+.p-menuitem-content:hover {
+  color:none !important;
+  background: none !important;
+}
+.p-menuitem-content .App-logo:hover {
+  color:none !important;
+  background: transparent !important;
+}
+.p-avatar { 
+  margin-left: 80px !important;
+}
+.p-panelmenu-header-content{
+  margin-left:-12px !important;
+}
+.admin-panel{
+  margin-top: 80px !important;
+}
