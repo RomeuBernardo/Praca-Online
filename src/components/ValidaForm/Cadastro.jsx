@@ -221,7 +221,7 @@ const MauFormulario = () => {
         </div>
            
       </form>
-      </body>   
+      </body>  
   );
 };
 
